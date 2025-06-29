@@ -95,9 +95,7 @@ Use Get/Create/Update/Delete/Export requests under Finance Analytics Dashboard.
 
 Share collection via Postman share link.
 
-🎥 Demo Video
 
-Link to Demo Video
 
 📦 Deployment
 

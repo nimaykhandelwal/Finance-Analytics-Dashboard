@@ -12,25 +12,28 @@ Dev Tools: Postman collection for API testing, Vite for fast bundling
 
 📂 Repository Structure
 
+```text
 Finance-Analytics-Dashboard/
-├── backend/               # Express server with controllers, routes, models
+├── backend/                    # Express server with controllers, routes, models
 │   ├── src/
-│   │   ├── controllers/   # Business logic for auth & transactions
-│   │   ├── middleware/    # JWT verification
-│   │   ├── models/        # Mongoose schemas
-│   │   ├── routes/        # API route definitions
-│   │   └── utils/         # CSV exporter, error handler, etc.
-│   ├── .env.example       # Template for environment variables
+│   │   ├── controllers/        # Business logic for auth & transactions
+│   │   ├── middleware/         # JWT verification
+│   │   ├── models/             # Mongoose schemas
+│   │   ├── routes/             # API route definitions
+│   │   └── utils/              # CSV exporter, error handler, etc.
+│   ├── .env.example            # Template for environment variables
 │   └── package.json
-├── frontend/              # React app scaffolded with Vite + TS
+├── frontend/                   # React app scaffolded with Vite + TS
 │   ├── src/
-│   │   ├── api/           # Axios instance
-│   │   ├── components/    # Transaction table, filter drawer, modals
-│   │   ├── pages/         # Login & Dashboard pages
-│   │   └── App.tsx        # Routing and protected routes
-│   ├── .env.example       # Template for Vite env (VITE_API_URL)
+│   │   ├── api/                # Axios instance
+│   │   ├── components/         # Transaction table, filter drawer, modals
+│   │   ├── pages/              # Login & Dashboard pages
+│   │   └── App.tsx             # Routing and protected routes
+│   ├── .env.example            # Template for Vite env (VITE_API_URL)
 │   └── package.json
-└── README.md              # Project overview and setup instructions
+└── README.md                   # Project overview and setup instructions
+```
+
 
 📖 Features
 

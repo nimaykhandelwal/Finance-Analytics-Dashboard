@@ -14,24 +14,30 @@ Dev Tools: Postman collection for API testing, Vite for fast bundling
 
 ```text
 Finance-Analytics-Dashboard/
-├── backend/                    # Express server with controllers, routes, models
+├── backend/                      # Express REST API server implementation
 │   ├── src/
-│   │   ├── controllers/        # Business logic for auth & transactions
-│   │   ├── middleware/         # JWT verification
-│   │   ├── models/             # Mongoose schemas
-│   │   ├── routes/             # API route definitions
-│   │   └── utils/              # CSV exporter, error handler, etc.
-│   ├── .env.example            # Template for environment variables
-│   └── package.json
-├── frontend/                   # React app scaffolded with Vite + TS
+│   │   ├── config/               # Configuration files (e.g., database connection)
+│   │   ├── controllers/          # Route handler logic for authentication and transactions
+│   │   ├── middleware/           # JWT verification and request validation
+│   │   ├── models/               # Mongoose schemas defining data structure
+│   │   ├── routes/               # API endpoint definitions and routing
+│   │   ├── utils/                # Utilities (CSV exporter, error handlers, etc.)
+│   │   └── index.ts              # Server bootstrap and middleware setup
+│   ├── .env.example              # Environment variable template (.env file)
+│   └── package.json              # Backend dependencies and scripts
+│
+├── frontend/                     # React/Vite single-page application
 │   ├── src/
-│   │   ├── api/                # Axios instance
-│   │   ├── components/         # Transaction table, filter drawer, modals
-│   │   ├── pages/              # Login & Dashboard pages
-│   │   └── App.tsx             # Routing and protected routes
-│   ├── .env.example            # Template for Vite env (VITE_API_URL)
-│   └── package.json
-└── README.md                   # Project overview and setup instructions
+│   │   ├── api/                  # Axios instance configured with base URL and interceptors
+│   │   ├── components/           # Reusable UI components (tables, modals, filters)
+│   │   ├── pages/                # Top-level page components (Login, Dashboard)
+│   │   ├── main.tsx              # Application entry point (renders React tree)
+│   │   └── App.tsx               # Route definitions and protected-route wrapper
+│   ├── .env.example              # Vite environment variable template
+│   └── package.json              # Frontend dependencies and scripts
+│
+└── README.md                     # Project overview, setup instructions, and usage guide
+
 ```
 
 
